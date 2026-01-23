@@ -280,3 +280,77 @@ body {
 .contact-form button:hover {
     background-color: #256b45;
 }
+/* =========================
+   RESPONSIVE - TABLET
+   ========================= */
+@media (max-width: 1024px) {
+
+    .news-list,
+    .special-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu ul {
+        justify-content: center;
+    }
+}
+
+/* =========================
+   RESPONSIVE - MOBILE
+   ========================= */
+@media (max-width: 768px) {
+
+    /* MENU */
+    .menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu ul li a {
+        padding: 10px;
+        display: block;
+    }
+
+    /* NEWS & SPECIAL */
+    .news-list,
+    .special-list {
+        grid-template-columns: 1fr;
+    }
+
+    /* HERO */
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    /* FOOTER */
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+}
+/*Làm ảnh không bị vỡ trên mọi màn hình*/
+img {
+    max-width: 100%;
+    height: auto;
+}
+/*Responsive cho phần “Tin nổi bật” (Flex → cột)*/
+@media (max-width: 768px) {
+    .news-item {
+        flex-direction: column;
+    }
+
+    .news-item img {
+        width: 100%;
+        height: 180px;
+    }
+}
