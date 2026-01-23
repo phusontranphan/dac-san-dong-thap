@@ -280,6 +280,7 @@ body {
 .contact-form button:hover {
     background-color: #256b45;
 }
+/*TRANG CHỦ*/
 /* =========================
    RESPONSIVE - TABLET
    ========================= */
@@ -352,5 +353,54 @@ img {
     .news-item img {
         width: 100%;
         height: 180px;
+    }
+}
+
+/*GIỚI THIỆU*/
+/* =========================
+   RESPONSIVE - ABOUT (TABLET)
+   ========================= */
+@media (max-width: 1024px) {
+
+    .about-content {
+        gap: 20px;
+    }
+
+    .about-text {
+        width: 55%;
+    }
+
+    .about-image {
+        width: 45%;
+    }
+}
+/* =========================
+   RESPONSIVE - ABOUT (MOBILE)
+   ========================= */
+@media (max-width: 768px) {
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-text,
+    .about-image {
+        width: 100%;
+    }
+
+    .about-page h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .about-text p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+}
+/*Nếu trang Giới thiệu có nhiều đoạn chữ dài*/
+@media (max-width: 768px) {
+    .about-text {
+        padding: 0 10px;
     }
 }
