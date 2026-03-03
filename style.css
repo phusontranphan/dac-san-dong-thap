@@ -36,7 +36,7 @@ body {
 .banner {
     background-color: #f5f5f5;
     text-align: center;
-    padding: 60px 20px;
+    padding: 40px 20px;
     margin-bottom: 40px;
 }
 
@@ -403,4 +403,5 @@ img {
     .about-text {
         padding: 0 10px;
     }
+
 }
